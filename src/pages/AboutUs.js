@@ -6,7 +6,7 @@ import chatimage from '../assets/chat.png';
 const AboutUs = () => {
     return (
         <div>
-        <section className="bg-white py-12 mb-16">
+        <section className="bg-white py-12 mb-32">
             <div className="container mx-auto px-4">
                 <div className="mb-8">
                     <h2 className="text-4xl font-bold text-gray-800 mb-2">About Us</h2>
