@@ -1,0 +1,78 @@
+import React from 'react';
+import myImage from '../assets/Rectangle 672.png'; // import your image here
+import myImage1 from '../assets/Rectangle 668.png'; // import your image here
+
+export default function ImageGrid() {
+  const posts = [
+    {
+      img: myImage,
+      title: "Featured Image",
+      content: "This is the first image in the grid and has individual styling.",
+      className: "bg-red-200", // individual class for first image
+    },
+    {
+      title: "Real-time GIg Driver Search",
+      img: myImage1,
+      content:
+        "Our platform allows you to search for gig drivers in real-time, based on their location, availability, and other relevant factors.",
+      className: "", // no individual class for this image
+    },
+    {
+      title: "Multiple-pickup and delivery",
+      img: myImage1,
+      content:
+        "you can allocate multiple pickups and deliveries to a single gig driver, which can help you save time and money.",
+    },
+    {
+      title: "Optimized Route Planning",
+      img: myImage1,
+      content:
+        "Our AI-based route optimization system helps gig drivers plan their route in the most efficient way possible, saving time and reducing transportation costs.",
+    },
+    {
+      title: "Dynamic Rate & Promotions",
+      img: myImage1,
+      content:
+        "Our platform features a dynamic rate and promotion system that enables you to set flexible pricing based on demand and supply.",
+    },
+    {
+      title: "Customer Support",
+      img: myImage1,
+      content:
+        "Our customer support team is available 24/7 to assist you with any questions or concerns you may have.",
+    },
+  ]
+
+return (
+    <div className="flex flex-col md:flex-row justify-center mt-32 mb-32 ">
+      <div className="grid grid-cols-1 justify-center md:grid-cols-3 gap-0 ">
+        {posts.map((item, key) => (
+          <div
+            className={`w-full rounded-lg lg:max-w-xs ${item.className}`}
+            key={key}
+          >
+            <div className="p-4">
+              <h4 className="text-2xl font-semibold text-black text-center h-8">
+                {item.title}
+              </h4>
+            </div>
+            <div className="relative overflow-hidden h-48">
+              <img
+                className="object-cover absolute inset-0 w-full h-full mx-auto"
+                style={{
+                  width: "200px",
+                  height: "200px",
+                }}
+                src={item.img}
+                alt="image"
+              />
+            </div>
+            <p className="p-4 text-justify md:text-center sm:text-sm sm:leading-snug md:leading-relaxed lg:leading-relaxed">
+              {item.content}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
