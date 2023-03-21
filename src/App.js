@@ -12,7 +12,6 @@ function App() {
     <div>
       <Navbar />
       <HeroSection />
-      <Form />
       <ImageGrid />
       <MapSection />
       <Footer />
