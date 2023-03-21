@@ -52,7 +52,7 @@ function Footer() {
           <FontAwesomeIcon icon={faPinterest} />
         </a>
       </div>
-      <div className="w-full text-sm md:w-auto text-center md:text-center mt-16">
+      <div className="w-full text-sm md:w-auto text-center md:text-center mt-4">
       <p>&copy; 2023 My Company. All rights reserved.</p>
     </div>
     </footer>
