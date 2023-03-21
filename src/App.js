@@ -5,7 +5,6 @@ import HeroSection from './components/HeroSection';
 import ImageGrid from './components/ImageGrid';
 import MapSection from './components/MapSection';
 import Footer from './components/Footer';
-import Form from './pages/Form';
 
 function App() {
   return (
